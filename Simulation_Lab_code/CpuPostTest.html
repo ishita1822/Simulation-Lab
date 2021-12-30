@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>PostTest</title>
+	<style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #800000;
+            }
+
+        .button1:hover {
+            background-color: #800000;
+            color: white;
+        }
+        
+       
+</style>
+	</script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <!-- <a class="navbar-brand " href="#">
+                    <img src="img/onlinelogomaker-062921-0301-5181.png" height="30" width="41">
+                </a> -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Aboutus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">References</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> -->  
+                </ul>
+            </div>
+        </nav>
+
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="col-12">
+                        <h1>PIVI</h1>
+                        <p style="font-size: large;">Perception In Virtual Illustration</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <h2 style="padding: 15px; font-weight: 400;">POST-TEST</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row" style="margin: 10px 0px 10px 0px;">
+                <div class="col-12 col-sm-12">
+                    <h1 style="background-color:#ffe6e6; padding: 0px 0px 0px 195px; "><u>Post-test of CPU Scheduling Algorithm (FCFS) </u></h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <table style="width:30% ;"align=center>
+                        <tr bgcolor="lightyellow">
+                              <th>Process</th>
+                              <th>Burst time</th>
+                        </tr>
+                        <tr align=center bgcolor="#ffe6e6">
+                              <td>P0</td>
+                              <td>24</td>
+                        </tr>
+                      <tr align=center bgcolor="#ffe6e6">
+                              <td>P1</td>
+                              <td>3</td>
+                        </tr>
+                      <tr align=center bgcolor="#ffe6e6">
+                              <td>P2</td>
+                              <td>3</td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <script>
+                        function check()
+                         {
+                    var c=0;
+                    var question1=document.Pretest1.q1.value;
+                    var question2=document.Pretest1.q2.value;
+                    var question3=document.Pretest1.q3.value;
+                    var question4=document.Pretest1.q4.value;
+                    var question5=document.Pretest1.q5.value;
+                
+                    if (question1=="1c") 
+                        {c=c+1}
+                    if (question2=="2a")
+                        {c=c+1}
+                    if (question3=="3a") 
+                        {c=c+1}
+                    if (question4=="4d") 
+                        {c=c+1}
+                    if (question5=="5c") 
+                        {c=c+1}
+                    
+                    var result = " Your Score is " + c + " out of 5.";
+                   
+                   alert(result);
+                    
+                
+                }
+                    </script>
+                    <form name="Pretest1" id="Pretest1">
+                        <br>
+                        <div>
+                            <p>1. What is the completion time of process P2 ? </p>
+                            <p><input type="radio" name="q1" value="1a">A. 27 </p>
+                            <p><input type="radio" name="q1" value="1b">B. 31 </p>
+                            <p><input type="radio" name="q1" value="1c">C. 30 </p>
+                            <p><input type="radio" name="q1" value="1d">D. 24 </p>
+                        </div>
+                
+                        <br>
+                        <div>
+                            <p>2. What is the turn around time of process P1 ? </p>
+                            <p><input type="radio" name="q2" value="2a">A. 27 </p>
+                            <p><input type="radio" name="q2" value="2b">B. 28 </p>
+                            <p><input type="radio" name="q2" value="2c">C. 29 </p>
+                            <p><input type="radio" name="q2" value="2d">D. 26 </p>
+                        </div>
+                
+                        <br>
+                        <div>
+                            <p>3. What is the average turn around time ? </p>
+                            <p><input type="radio" name="q3" value="3a">A. 28 msec </p>
+                            <p><input type="radio" name="q3" value="3b">B. 27 msec </p>
+                            <p><input type="radio" name="q3" value="3c">C. 29 msec </p>
+                            <p><input type="radio" name="q3" value="3d">D. 26 msec </p>
+                        </div>
+                
+                        <br>
+                        <div>
+                            <p>4. What is the average waiting time ? </p>
+                            <p><input type="radio" name="q4" value="4a">A. 12 msec </p>
+                            <p><input type="radio" name="q4" value="4b">B. 15 msec </p>
+                            <p><input type="radio" name="q4" value="4c">C. 18 msec </p>
+                            <p><input type="radio" name="q4" value="4d">D. 17 msec </p>
+                        </div>
+                
+                        <br>
+                        <div>
+                            <p>5. Which process waits for the longest time ? </p>
+                            <p><input type="radio" name="q5" value="5a">A. P0 </p>
+                            <p><input type="radio" name="q5" value="5b">B. P1 </p>
+                            <p><input type="radio" name="q5" value="5c">C. P2 </p>
+                            <p><input type="radio" name="q5" value="5d">D. None </p>
+                        </div>
+                
+                        <p><br>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row row-content">
+                <div class="col-12">
+                    <button class="button button1" onclick="check()(this.value);">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

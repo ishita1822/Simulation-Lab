@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Simulation Lab</title>
+    <style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #800000;
+            }
+
+        .button1:hover {
+            background-color: #800000;
+            color: white;
+        } 
+</style>
+
+<script>
+    var new1 = [4,3,1,5,2];
+    var c=0;
+    var x=0;
+    var r=0;
+    
+    function myDeleteFunction() {
+      document.getElementById("myTable").deleteRow(r);
+      x--;
+      r--;
+    }
+    
+    function p1() {
+       
+        c=1;
+        if (new1[x]==c)
+        {
+          var table = document.getElementById("myTable");
+          var row = table.insertRow(r);
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          cell1.innerHTML = "P1";
+          cell2.innerHTML = "12 - 17 seconds";
+          x++;
+          r++;
+        }
+        else 
+        {
+            alert("Wrong.");
+        }
+       
+    }
+    
+    function p2() {
+      
+        c=2;
+        if (new1[x]==c)
+        {
+        var table = document.getElementById("myTable");
+      var row = table.insertRow(r);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      cell1.innerHTML = "P2";
+      cell2.innerHTML = "22 - 23 seconds";
+      x++;
+      alert("Your sequence is correct!! Click see solution for detail solution.")
+        }
+        else 
+        {
+            alert("Wrong.");
+        }
+        
+     
+    }
+    
+    function p3() {
+     
+        c=3;
+        if (new1[x]==c)
+        {
+        var table = document.getElementById("myTable");
+      var row = table.insertRow(r);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      cell1.innerHTML = "P3";
+      cell2.innerHTML = " 4 - 11 seconds";
+       x++;
+       r++;
+      
+     }
+     else 
+        {
+            alert("Wrong.");
+        }
+        
+    }
+    
+    function p4() {
+        c=4;
+        if (new1[x]==c)
+        {
+        var table = document.getElementById("myTable");
+      var row = table.insertRow(r);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      cell1.innerHTML = "P4";
+      cell2.innerHTML = " 0 - 3 seconds";
+       x++;
+       r++;
+      }
+      else 
+        {
+            alert("Wrong.");
+        }
+        
+    }
+    
+    function p5() {
+       
+        c=5;
+        if (new1[x]==c)
+        {
+        var table = document.getElementById("myTable");
+        var row = table.insertRow(r);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = "P5";
+        cell2.innerHTML = "18 - 21 seconds";
+       x++;
+       r++;
+      }
+      else 
+        {
+            alert("Wrong.");
+        }
+    
+    }
+    
+    </script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <!-- <a class="navbar-brand " href="#">
+                    <img src="img/onlinelogomaker-062921-0301-5181.png" height="30" width="41">
+                </a> -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Aboutus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reference.html">References</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> -->  
+                </ul>
+            </div>
+        </nav>
+
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="col-12">
+                        <h1>PIVI</h1>
+                        <p style="font-size: large;">Perception In Virtual Illustration</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <h2 style="padding: 15px; font-weight: 400;">SIMULATION</h2>
+                    <hr>
+                </div>
+            </div>
+
+            
+
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <table height="30%"" width="100%" id="tableborder">
+                        <tr>
+                            <td>
+                        <h5 align="center">Consider 5 processes P1, P2, P3, P4, P5 <br>and their respective Burst time and Arrival time is given in the table below.<br> Solve by FCFS sheduling algorithm.</h5>
+                            </td>
+                            <td>
+                        <table align="center" border="1" height="30%" width="70%">
+                            <tr align="center">
+                                <td><h5>Process</h5></td>
+                                <td><h5>Burst Time</h5></td>
+                                <td><h5>Arrival Time</h5></td>
+                            </tr>
+                            <tr align="center">
+                                <td><b>P1</b></td>
+                                <td><b>6</b></td>
+                                <td><b>2</b></td>
+                            </tr>
+                            <tr align="center">
+                                <td><b>P2</b></td>
+                                <td><b>3</b></td>
+                                <td><b>5</b></td>
+                            </tr>
+                            <tr align="center">
+                                <td><b>P3</b></td>
+                                <td><b>8</b></td>
+                                <td><b>1</b></td>
+                            </tr>
+                            <tr align="center">
+                                <td><b>P4</b></td>
+                                <td><b>3</b></td>
+                                <td><b>0</b></td>
+                            </tr>
+                            <tr align="center">
+                                <td><b>P5</b></td>
+                                <td><b>4</b></td>
+                                <td><b>4</b></td>
+                            </tr>
+                        </table>
+                            </td>
+                        
+                        </table>
+                    </div>
+                
+                </div>
+                </div>
+                <div class="container-fluid">
+                <div class="row ">
+    
+                    <div class="col-sm-12 offset-sm-2">
+                        <p style="margin: 30px 0px 30px 40px;">
+                            <button class="button button1" onclick="p1()">Process P1</button>
+                            <button class="button button1" onclick="p2()">Process P2</button>
+                            <button class="button button1" onclick="p3()">Process P3</button>
+                            <button class="button button1" onclick="p4()">Process P4</button>
+                            <button class="button button1" onclick="p5()">Process P5</button>
+                        
+                            <button class="button button1" onclick="myDeleteFunction()" align="right">Delete</button>
+                            <button class="button button1" onClick="history.go(0);"> Refresh</button>
+                            <a href="CpuSol.html"> 
+                                <button class="button button1">See Solution</button></a>
+                             </div>
+                        
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table align="center">
+                            
+                            <tr height="30px" width="20px">
+                           <td>Process</td>
+                           <td>Completion Time</td>
+                      
+                       </tr>
+                   </table>
+                   
+                   <table style="background-color:#ffe6e6;" align="center" id="myTable" >
+                      
+                       <tr height="30px" width="20px" style="display: flex; flex-direction: column-reverse;">
+                       </tr>
+                   </table> 
+                    </div>
+                </div>
+                       
+         </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

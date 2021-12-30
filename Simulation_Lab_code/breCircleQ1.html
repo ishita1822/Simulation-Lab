@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Simulation Lab</title>
+    <style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #800000;
+            }
+
+        .button1:hover {
+            background-color: #800000;
+            color: white;
+        }
+        
+       
+</style>
+        
+<script>
+    function fun0(){
+        alert("You have selected Wrong point.");
+    }
+    function fun1(){
+            document.getElementById("1").style.backgroundColor = "Blue";
+            alert("Next point will be: 1,5 or 2,5");
+    }
+     
+    function fun2(){
+         alert("Next point will be: 2,3 or 2,4");
+    }
+    
+    function fun3(){
+        alert("Next point will be: 2,2 or 3,3");
+    }
+
+    function fun4(){
+        alert("Finished!! You can now see the solution")
+    }
+
+      var btn = document.getElementById("1");
+      
+      btn.addEventListener("click", fun0);
+      btn.addEventListener("click", fun1);
+      btn.addEventListener("click", fun2);
+      btn.addEventListener("click", fun3);
+      btn.addEventListener("click", fun4);
+      btn.addEventListener("click", fun5); 
+      btn.addEventListener("click", fun6);    
+        </script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <!-- <a class="navbar-brand " href="#">
+                    <img src="img/onlinelogomaker-062921-0301-5181.png" height="30" width="41">
+                </a> -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Aboutus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">References</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> -->  
+                </ul>
+            </div>
+        </nav>
+
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="col-12">
+                        <h1>PIVI</h1>
+                        <p style="font-size: large;">Perception In Virtual Illustration</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <h2 style="padding: 15px; font-weight: 400;">PROBLEM 1(Center at origin)</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <h1 style="background-color:#ffe6e6; padding: 0px 0px 0px 350px; margin-bottom: 40px;"><u>Bresenham Circle Drawing </u></h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+            
+            
+        <b><p align="center" style="font-size:160%;background-color:lightyellow;" >Q1. Draw a circle with center (0,0) and radius 5 using Bresenham Circle  Drawing Algorithm </p></b>
+        <h3 align="center">Select the coordinates from the table below</h3>
+            
+       
+        <table height="60%" width="60%" align="center" style="background-color:#ffe6e6;">
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';" >-5,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">1,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">2,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,7</td>
+            </tr>
+           <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';" >-5,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';fun0()">1,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">2,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,6</td>
+            </tr>
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-5,5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,5</td>
+                <td onclick="fun1();" id="1">0,5</td>
+                <td onclick="this.style.backgroundColor = 'Blue';fun2()">1,5</td>
+                <td onclick="this.style.backgroundColor = 'Red';fun0()">2,5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,5</td>
+            </tr>
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-5,4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">1,4</td>
+                <td onclick="this.style.backgroundColor = 'Blue';fun3()">2,4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,4</td>
+            </tr>
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-5,3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">1,3</td>
+                <td onclick="this.style.backgroundColor = 'Red';fun0()">2,3</td>
+                <td onclick="this.style.backgroundColor = 'Blue';fun4()">3,3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,3</td>
+            </tr>
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-5,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">1,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';fun0()">2,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,2</td>
+            </tr>
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-5,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">1,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">2,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,1</td>
+            </tr>
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-5,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">1,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">2,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,0</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,0</td>
+            </tr>
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-5,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">1,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">2,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,-1</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,-1</td>
+            </tr>
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-5,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">1,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">2,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,-2</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,-2</td>
+            </tr>
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-5,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">1,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">2,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,-3</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,-3</td>
+            </tr>
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-5,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">1,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">2,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,-4</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,-4</td>
+            </tr>
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-5,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">1,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">2,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,-5</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,-5</td>
+            </tr>
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-5,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">1,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">2,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,-6</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,-6</td>
+            </tr>
+            <tr>
+                <td onclick="this.style.backgroundColor = 'Red';">-7,7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-6,-7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-5,-7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-4,-7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-3,-7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-2,-7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">-1,-7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">0,-7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">1,-7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">2,-7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">3,-7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">4,-7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">5,-7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">6,-7</td>
+                <td onclick="this.style.backgroundColor = 'Red';">7,-7</td>
+            </tr>
+        </table>
+        <p><br>
+        </p>
+        </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12">
+                <button onClick="history.go(0);" class="button button1">Reset</button>
+
+            <a href="breCircleEntireQ1.html"> 
+               <button class="button button1">View Entire Circle</button></a>
+            </div>
+        </div> 
+        </div>   
+        
+
+        
+        <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Pretest</title>
+	<style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #800000;
+            }
+
+        .button1:hover {
+            background-color: #800000;
+            color: white;
+        }
+        
+       
+</style>
+	</script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <!-- <a class="navbar-brand " href="#">
+                    <img src="img/onlinelogomaker-062921-0301-5181.png" height="30" width="41">
+                </a> -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Aboutus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">References</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> -->  
+                </ul>
+            </div>
+        </nav>
+
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="col-12">
+                        <h1>PIVI</h1>
+                        <p style="font-size: large;">Perception In Virtual Illustration</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <h2 style="padding: 15px; font-weight: 400;">POST-TEST</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row" style="margin: 10px 0px 10px 0px;">
+                <div class="col-12 col-sm-12">
+                    <h1 style="background-color:#ffe6e6; padding: 0px 0px 0px 195px; "><u>Post-test of Bresenham Line Drawing Algorithm </u></h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <script>
+                        function check()
+             {
+                 var c=0;
+                 var question1=document.Posttest2.q1.value;
+                 var question2=document.Posttest2.q2.value;
+                 var question3=document.Posttest2.q3.value;
+                 var question4=document.Posttest2.q4.value;
+                 var question5=document.Posttest2.q5.value;
+             
+                 if (question1=="1a") 
+                     {c=c+1}
+                 if (question2=="2c")
+                     {c=c+1}
+                 if (question3=="3b") 
+                     {c=c+1}
+                 if (question4=="4d") 
+                     {c=c+1}
+                 if (question5=="5b") 
+                     {c=c+1}
+             
+                     var result = "Your Score is " +c;
+                
+                    alert(result);
+             }
+                    </script>
+                 <form name="Posttest2" id="Posttest2">
+                     <br>
+                     <div>
+                         <p>1. Consider the line from (2,7) to (5,5). Using Bresenham line drawing algorithm determine the correct sequence of plotted pixel.</p>
+                         <p><input type="radio" name="q1" value="1a">A. (3,6) (4,6) </p>
+                         <p><input type="radio" name="q1" value="1b">B. (3,7) (3,6) </p>
+                         <p><input type="radio" name="q1" value="1c">C. (4,3) (5,4) </p>
+                         <p><input type="radio" name="q1" value="1d">D. (2,2) (3,3) </p>
+                     </div>
+             
+                     <br>
+                     <div>
+                         <p>2. What will be the second pixel for a line with end points (4,9) to (7,7). </p>
+                         <p><input type="radio" name="q2" value="2a">A. (4,10) </p>
+                         <p><input type="radio" name="q2" value="2b">B. (4,9) </p>
+                         <p><input type="radio" name="q2" value="2c">C. (5,8) </p>
+                         <p><input type="radio" name="q2" value="2d">D. (5,9) </p>
+                     </div>
+             
+                     <br>
+                     <div>
+                         <p>3. What will be the pixel after (4,4) for a line with end pointsb(2,2) and (6,5). </p>
+                         <p><input type="radio" name="q3" value="3a">A. (4,5) </p>
+                         <p><input type="radio" name="q3" value="3b">B. (5,4) </p>
+                         <p><input type="radio" name="q3" value="3c">C. (6,5) </p>
+                         <p><input type="radio" name="q3" value="3d">D. (5,5) </p>
+                     </div>
+             
+                     <br>
+                     <div>
+                         <p>4. What will be the 6th pixel of a line with end point (4,4) and (12,9). </p>
+                         <p><input type="radio" name="q4" value="4a">A. (7,5) </p>
+                         <p><input type="radio" name="q4" value="4b">B. (6,5) </p>
+                         <p><input type="radio" name="q4" value="4c">C. (8,6) </p>
+                         <p><input type="radio" name="q4" value="4d">D. (9,7) </p>
+                     </div>
+             
+                     <br>
+                     <div>
+                         <p>5. How many iterations are required for plotting a line with end points (4,4) and (12,9) </p>
+                         <p><input type="radio" name="q5" value="5a">A. 8 </p>
+                         <p><input type="radio" name="q5" value="5b">B. 9 </p>
+                         <p><input type="radio" name="q4" value="5c">C. 7 </p>
+                         <p><input type="radio" name="q4" value="5d">D. 6 </p>
+                     </div>
+             
+                     <p><br>
+                     </p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row row-content">
+                <div class="col-12">
+                    <button class="button button1" onclick="check()(this.value);">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

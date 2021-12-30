@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<!-- Bootstrap Css -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<title>Simulation Lab</title>
+	<style>
+		canvas {
+			position: absolute;
+			left: 350px;
+			top: 700px;
+			border: 1px solid #2C2C2B;
+			margin: auto;
+		}
+
+		.buttoncanvas {
+			background-color: #4Caf50;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		.buttoncanvas:hover {
+			background-color: #f44336;
+			color: white;
+		}
+
+		.button {
+			background-color: #4CAF50;
+			/* Green */
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+		}
+
+		.button1 {
+			background-color: white;
+			color: black;
+			border: 2px solid #800000;
+		}
+
+		.button1:hover {
+			background-color: #800000;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+		<div class="container">
+			<!-- <a class="navbar-brand " href="#">
+                    <img src="img/onlinelogomaker-062921-0301-5181.png" height="30" width="41">
+                </a> -->
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="about.html">Aboutus</a></li>
+				<li class="nav-item"><a class="nav-link" href="reference.html">References</a></li>
+				<!-- <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> -->
+			</ul>
+		</div>
+	</nav>
+
+	<header class="jumbotron">
+		<div class="container">
+			<div class="row row-header">
+				<div class="col-12">
+					<h1>PIVI</h1>
+					<p style="font-size: large;">Perception In Virtual Illustration</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-12">
+				<h2 style="padding: 15px; font-weight: 400;">SIMULATION</h2>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 col-sm-12">
+				<h1 style="background-color:#ffe6e6; padding: 0px 0px 0px 195px; margin-bottom: 20px;"><u>SCAN DISC
+						SCHEDULING ALGORITHM</u></h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+
+				<p align="center" style="font-size: large;margin: 30px 0px;">
+				<h4>
+					Consider a disk queue with requests for I/O to blocks on cylinders 98, 183, 41, 122, 14, 124, 65,
+					67. <br>The SCAN scheduling algorithm is used. The head is initially at cylinder number 53 moving
+					<br>towards larger cylinder numbers on its servicing pass. The cylinders are numbered from 0 to
+					199.<br> What is the total head movement (in number of cylinders) incurred while servicing these
+					requests?
+				</h4>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="row">
+            <div class="col-sm-12">     -->
+	<canvas id="Canvas" width="1170" height="620" style="background-color:lightyellow; margin-bottom: 30px;"></canvas>
+	<p align="center">
+		<button class="buttoncanvas" onclick="node0()">0</button>
+		<button class="buttoncanvas" onclick="node53()">53</button>
+		<button class="buttoncanvas" onclick="node98()">98</button>
+		<button class="buttoncanvas" onclick="node183()">183</button>
+		<button class="buttoncanvas" onclick="node41()">41</button>
+		<button class="buttoncanvas" onclick="node122()">122</button>
+		<button class="buttoncanvas" onclick="node14()">14</button>
+		<button class="buttoncanvas" onclick="node124()">124</button>
+		<button class="buttoncanvas" onclick="node65()">65</button>
+		<button class="buttoncanvas" onclick="node67()">67</button>
+		<button class="buttoncanvas" onclick="node199()">199</button>
+	</p>
+	<script>
+		var canvas = document.getElementById('Canvas');
+		var context = canvas.getContext('2d');
+		context.beginPath();
+		context.moveTo(40, 70);
+		context.lineTo(1080, 70);
+		context.lineWidth = 10;
+		context.strokeStyle = "#fa4b2a";
+		//context.arc(95,50,7,0,2*Math.PI);
+		context.stroke();
+
+		var text = '0';
+		context.font = '35px Papyrus, sans-Serif';
+		context.fillStyle = '#fa4b2a';
+		context.fillText(text, 40, 100);
+
+		var text1 = '14';
+		context.font = '35px Papyrus, sans-Serif';
+		context.fillStyle = '#fa4b2a';
+		context.fillText(text1, 140, 100);
+
+		var text2 = '41';
+		context.font = '35px Papyrus, sans-Serif';
+		context.fillStyle = '#fa4b2a';
+		context.fillText(text2, 240, 100);
+
+		var text3 = '53';
+		context.font = '35px Papyrus, sans-Serif';
+		context.fillStyle = '#fa4b2a';
+		context.fillText(text3, 340, 100);
+
+		var text4 = '65';
+		context.font = '35px Papyrus, sans-Serif';
+		context.fillStyle = '#fa4b2a';
+		context.fillText(text4, 440, 100);
+
+		var text5 = '67';
+		context.font = '35px Papyrus, sans-Serif';
+		context.fillStyle = '#fa4b2a';
+		context.fillText(text5, 540, 100);
+
+		var text6 = '98';
+		context.font = '35px Papyrus, sans-Serif';
+		context.fillStyle = '#fa4b2a';
+		context.fillText(text6, 640, 100);
+
+		var text7 = '122';
+		context.font = '35px Papyrus, sans-Serif';
+		context.fillStyle = '#fa4b2a';
+		context.fillText(text7, 740, 100);
+
+		var text8 = '124';
+		context.font = '35px Papyrus, sans-Serif';
+		context.fillStyle = '#fa4b2a';
+		context.fillText(text8, 840, 100);
+
+		var text9 = '183';
+		context.font = '35px Papyrus, sans-Serif';
+		context.fillStyle = '#fa4b2a';
+		context.fillText(text9, 940, 100);
+
+		var text10 = '199';
+		context.font = '35px Papyrus, sans-Serif';
+		context.fillStyle = '#fa4b2a';
+		context.fillText(text10, 1040, 100);
+
+		var c53, c65, c67, c98, c122, c124, c183, c199, c14, c41;
+
+		function node53() {
+			context.beginPath();
+			context.arc(360, 150, 7, 0, 2 * Math.PI);
+			context.stroke();
+			c53 = 1;
+		}
+
+		function node65() {
+			context.arc(450, 200, 7, 0, 2 * Math.PI);
+			context.stroke();
+			c65 = 2;
+		}
+
+		function node67() {
+			context.arc(550, 250, 7, 0, 2 * Math.PI);
+			context.stroke();
+			c67 = 3;
+		}
+
+		function node98() {
+			context.arc(650, 300, 7, 0, 2 * Math.PI);
+			context.stroke();
+			c98 = 4;
+		}
+
+		function node122() {
+			context.arc(750, 350, 7, 0, 2 * Math.PI);
+			context.stroke();
+			c122 = 5;
+		}
+
+		function node124() {
+			context.arc(850, 400, 7, 0, 2 * Math.PI);
+			context.stroke();
+			c124 = 6;
+		}
+
+		function node183() {
+			context.arc(950, 450, 7, 0, 2 * Math.PI);
+			context.stroke();
+			c183 = 7;
+		}
+
+		function node199() {
+			context.arc(1050, 500, 7, 0, 2 * Math.PI);
+			context.stroke();
+			c199 = 8;
+		}
+
+		function node41() {
+			context.arc(275, 550, 7, 0, 2 * Math.PI);
+			context.stroke();
+			c41 = 9;
+		}
+
+		function node14() {
+			context.arc(180, 600, 7, 0, 2 * Math.PI);
+			context.stroke();
+			c14 = 10;
+		}
+
+		function check() {
+			if (c53 == 1) {
+				if (c65 == 2) {
+					if (c67 == 3) {
+						if (c98 == 4) {
+							if (c122 == 5) {
+								if (c124 == 6) {
+									if (c183 == 7) {
+										if (c199 == 8) {
+											if (c41 == 9) {
+												if (c14 == 10) {
+													alert("Hurray!! Your submission is correct. Check for complete stepwise solution.");
+												}
+												else {
+													alert("Incorrect!!");
+												}
+											}
+											else {
+												alert("Incorrect!!");
+											}
+										}
+										else {
+											alert("Incorrect!!");
+										}
+									}
+									else {
+										alert("Incorrect!!");
+									}
+								}
+								else {
+									alert("Incorrect!!");
+								}
+							}
+							else {
+								alert("Incorrect!!");
+							}
+						}
+						else {
+							alert("Incorrect!!");
+						}
+					}
+					else {
+						alert("Incorrect!!");
+					}
+				}
+				else {
+					alert("Incorrect!!");
+				}
+			}
+			else {
+				alert("Incorrect!!");
+			}
+		}
+
+
+	            // measure dimension using measureText
+	            //var measure = context.measureText(text);
+	            //var width = measure.width;
+	            //context.fillText('(' + width + 'px)', 300,170);
+	</script>
+
+
+	<!-- </div>
+        </div>
+        </div>  -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<center>
+						<button class="button button1" onclick="check()">Submit</button>
+						<button onClick="history.go(0);" class="button button1">Reset</button>
+
+						<a href="DiscSol.html">
+							<button class="button button1">See Solution</button></a>
+					</center>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS-->
+	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

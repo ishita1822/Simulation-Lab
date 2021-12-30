@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Pretest</title>
+	<style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #800000;
+            }
+
+        .button1:hover {
+            background-color: #800000;
+            color: white;
+        }
+        
+       
+</style>
+	</script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <!-- <a class="navbar-brand " href="#">
+                    <img src="img/onlinelogomaker-062921-0301-5181.png" height="30" width="41">
+                </a> -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Aboutus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">References</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> -->  
+                </ul>
+            </div>
+        </nav>
+
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row row-header">
+                    <div class="col-12">
+                        <h1>PIVI</h1>
+                        <p style="font-size: large;">Perception In Virtual Illustration</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <h2 style="padding: 15px; font-weight: 400;">PRE-TEST</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row" style="margin: 10px 0px 10px 0px;">
+                <div class="col-12 col-sm-12">
+                    <h1 style="background-color:#ffe6e6; padding: 0px 0px 0px 195px; "><u>Pre-test of Page Replacement Algorithm(FIFO)</u></h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <script>
+                        function check()
+                         {
+                    var c=0;
+                    var question1=document.Pretest1.q1.value;
+                    var question2=document.Pretest1.q2.value;
+                    var question3=document.Pretest1.q3.value;
+                    var question4=document.Pretest1.q4.value;
+                    var question5=document.Pretest1.q5.value;
+                
+                    if (question1=="1d") 
+                        {c=c+1}
+                    if (question2=="2c")
+                        {c=c+1}
+                    if (question3=="3c") 
+                        {c=c+1}
+                    if (question4=="4b") 
+                        {c=c+1}
+                    if (question5=="5a") 
+                        {c=c+1}
+                    
+                    var result = "Your Score is " +c;
+                   
+                   alert(result);
+                
+                }
+                    </script>
+                    <form name="Pretest1" id="Pretest1">
+                        <br>
+                        <div>
+                            <p>1.Which of the following is a Page Replacement Algorithm?</p>
+                            <p><input type="radio" name="q1" value="1a">A. First In First Out (FIFO)</p>
+                            <p><input type="radio" name="q1" value="1b">B. Optimal Page replacement</p>
+                            <p><input type="radio" name="q1" value="1c">C. Least Recently Used (LRU)</p>
+                            <p><input type="radio" name="q1" value="1d">D. All of the above</p>
+                        </div>
+                
+                        <br>
+                        <div>
+                            <p>2.A memory page containing a heavily used variable that was initialized very early and is in constant use is removed, then the page replacement algorithm used is ____________.</p>
+                            <p><input type="radio" name="q2" value="2a">A. LRU</p>
+                            <p><input type="radio" name="q2" value="2b">B. LFU</p>
+                            <p><input type="radio" name="q2" value="2c">C. FIFO</p>
+                            <p><input type="radio" name="q2" value="2d">D. None of the above</p>
+                        </div>
+                
+                        <br>
+                        <div>
+                            <p>3.Which of the following is the main drawback of FIFO page replacement algorithm? </p>
+                            <p><input type="radio" name="q3" value="3a">A. Requirement of large memory </p>
+                            <p><input type="radio" name="q3" value="3b">B. Frame allocation </p>
+                            <p><input type="radio" name="q3" value="3c">C. Reduction in multiprogramming </p>
+                            <p><input type="radio" name="q3" value="3d">D. Reduced optimality </p>
+                        </div>
+                
+                        <br>
+                        <div>
+                            <p>4.Which of the following is required to determine the number of page faults in FIFO?</p>
+                            <p><input type="radio" name="q4" value="4a">A. Page number </p>
+                            <p><input type="radio" name="q4" value="4b">B. Page frame number</p>
+                            <p><input type="radio" name="q4" value="4c">C. Memory capacity</p>
+                            <p><input type="radio" name="q4" value="4d">D. Segment number</p>
+                        </div>
+                
+                        <br>
+                        <div>
+                            <p>5.As the number of frames available increases, the number of page faults decreases. </p>
+                            <p><input type="radio" name="q5" value="5a">A. True </p>
+                            <p><input type="radio" name="q5" value="5b">B. False </p>
+                        </div>
+                
+                        <p><br>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row row-content">
+                <div class="col-12">
+                    <button class="button button1" onclick="check()(this.value);">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

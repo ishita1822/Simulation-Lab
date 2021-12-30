@@ -1,0 +1,60 @@
+.navbar-dark{
+    background-color: #800000;
+}
+
+.row-header{
+    margin: 0px auto;
+    padding: 0px 0px;
+}
+
+.jumbotron{
+    margin: 0px auto;
+    padding: 90px 28px;
+    height: 250px;
+    background: black;
+    color: floralwhite;
+}
+
+hr{
+    border: 1px solid ridge;
+}
+
+.row-content{
+    margin: 0px auto;
+    padding: 30px 0px;
+    min-height: 400px;
+    max-width: max-content;
+}
+
+.experiment-list-item{
+    padding: 30px 15px 30px 15px;
+}
+
+.list-item{
+    padding: 15px 15px 15px 15px;
+}
+
+.card-header{
+    padding: 50px 300px;
+    height: 180px;
+    background-color: black;
+    background: #fadcdc;
+
+}
+
+table,td{
+    border-collapse: separate;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#tableborder{
+    border-collapse: collapse;
+    border: 0px solid black;
+}
+
+.footer {
+    margin: 700px 0px;
+    padding: 20px 0px; }
+  
